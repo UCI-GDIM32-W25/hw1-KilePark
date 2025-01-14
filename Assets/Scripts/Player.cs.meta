@@ -3,7 +3,14 @@ guid: 78692814429bd4f79a92be7f923fb9e6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _playerTransform: {instanceID: 0}
+  - _plantPrefab: {instanceID: 0}
+  - _plantCountUI: {instanceID: 0}
+  - FaceUp: {fileID: -1721037939, guid: 6c76c7e97a3914d1c8180322aa5cba71, type: 3}
+  - FaceDown: {fileID: 888216046, guid: 6c76c7e97a3914d1c8180322aa5cba71, type: 3}
+  - FaceLeft: {fileID: -1869075770, guid: 6c76c7e97a3914d1c8180322aa5cba71, type: 3}
+  - FaceRight: {fileID: -1095400825, guid: 6c76c7e97a3914d1c8180322aa5cba71, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
