@@ -17,10 +17,12 @@ public class Player : MonoBehaviour
 
     private int _numSeedsLeft;
     private int _numSeedsPlanted;
+    private int counter = 5;
 
     private void Start ()
     {
-        
+        _numSeedsLeft = 1;
+        _numSeedsPlanted = 1;
     }
 
     private void Update()
@@ -52,10 +54,20 @@ public class Player : MonoBehaviour
         }
 
         transform.position = pos;
+
+        if (Input.GetKeyDown(KeyCode.Space) && counter > 0)
+        {
+            Instantiate(_plantPrefab, _playerTransform.position, _playerTransform.rotation);
+            Debug.Log("Planted");
+
+            PlantCountUI.instance.UpdateSeeds(_numSeedsLeft, _numSeedsPlanted);
+
+            counter -= 1;
+        }
     }
 
     public void PlantSeed ()
     {
-        
+       
     }
 }
